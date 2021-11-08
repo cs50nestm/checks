@@ -8,22 +8,31 @@ def exists():
     """linear.c exists"""
     check50.exists("linear.c")
 
+    
 @check50.check(exists)
 def compiles():
   """linear.c compiles"""
   check50.c.compile("linear.c", lcs50=True)
 
-@check("compiles")
-def test_handles_addition(self):
-  """linear search finds Malan"""
-  self.spawn("./linear").stdin("Malan").stdout("Calling Malan\n").exit(0)
+    
+@check50.check(compiles)
+def finds_22:
+  """linear search finds 22"""
+  self.spawn("./linear").stdin("22").stdout("Found your number! Bingo!\n").exit(0)
 
-@check("compiles")
-def test_handles_subtraction(self):
-  """linear search finds Smith"""
-  self.spawn("./linear").stdin("Smith").stdout("Calling Smith\n").exit(0)
-
-@check("compiles")
-def test_handles_division(self):
-  """linear search does not fine Tanzosh"""
-  self.spawn("./linear").stdin("Tanzosh").stdout("Quitting\n").exit(0)
+    
+@check50.check(compiles)
+def finds_7:
+  """linear search finds 22"""
+  self.spawn("./linear").stdin("7").stdout("Found your number! Bingo!\n").exit(0)
+    
+@check50.check(compiles)
+def finds_64:
+  """linear search finds 22"""
+  self.spawn("./linear").stdin("64").stdout("Found your number! Bingo!\n").exit(0)
+    
+    
+@check50.check(compiles)
+def does_not_find_50:
+  """linear search does not find 50"""
+  self.spawn("./linear").stdin("64").stdout("Sorry better luck next time!\n").exit(0)
