@@ -15,12 +15,12 @@ def compiles():
 @check50.check(compiles)
 def uppercase():
     """Outputs HLJ for Hailey Lynn James"""
-    check50.run("./initials").stdin("Hailey Lynn James").stdout(match("Initials: HLJ"), "HLJ\n").exit(0)
+    check50.run("./initials").stdin("Hailey Lynn James, prompt=False").stdout(match("Initials: HLJ"), "HLJ\n").exit(0)
 
 @check50.check(compiles)
 def lowercase():
     """Outputs HLJ for hailey lynn james"""
-    check50.run("./initials").stdin("hailey lynn james").stdout(match("Initials: HLJ"), "HLJ\n").exit(0)
+    check50.run("./initials").stdin("hailey lynn james, prompt=False").stdout(match("Initials: HLJ"), "HLJ\n").exit(0)
 
 @check50.check(compiles)
 def mixed_case():
