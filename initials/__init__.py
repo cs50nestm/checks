@@ -31,6 +31,3 @@ def mixed_case():
 def all_uppercase():
     """Outputs B for BRIAN"""
     check50.run("./initials").stdin("BRIAN",).stdout("[Ii]nitials:\s*B\n"), "Initials: B\n").exit(0)
-
-def match(initials):
-    return "^(.*\n)?{}\n".format(initials)
