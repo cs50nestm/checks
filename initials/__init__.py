@@ -30,4 +30,4 @@ def mixed_case():
 @check50.check(compiles)
 def all_uppercase():
     """Outputs B for BRIAN"""
-    check50.run("./initials").stdin("BRIAN",).stdout("[Ii]nitials:\s*B\n"), "Initials: B\n").exit(0)
+    check50.run("./initials").stdin("BRIAN",).stdout("[Ii]nitials:\s*B\n", "Initials: B\n").exit(0)
