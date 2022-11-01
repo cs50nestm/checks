@@ -1,6 +1,5 @@
 import check50
 import check50.c
-import re
 
 
 @check50.check()
@@ -18,21 +17,21 @@ def compiles():
 @check50.check(compiles)
 def finds_22:
   """linear search finds 22"""
-  self.spawn("./linear").stdin("22").stdout("Found your number! Bingo!\n").exit(0)
+  check50.run("./linear").stdin("22").stdout("Found your number! Bingo!\n").exit(0)
 
     
 @check50.check(compiles)
 def finds_7:
   """linear search finds 22"""
-  self.spawn("./linear").stdin("7").stdout("Found your number! Bingo!\n").exit(0)
+  check50.run("./linear").stdin("7").stdout("Found your number! Bingo!\n").exit(0)
     
 @check50.check(compiles)
 def finds_64:
   """linear search finds 22"""
-  self.spawn("./linear").stdin("64").stdout("Found your number! Bingo!\n").exit(0)
+  check50.run("./linear").stdin("64").stdout("Found your number! Bingo!\n").exit(0)
     
     
 @check50.check(compiles)
 def does_not_find_50:
   """linear search does not find 50"""
-  self.spawn("./linear").stdin("64").stdout("Sorry better luck next time!\n").exit(0)
+  check50.run("./linear").stdin("64").stdout("Sorry better luck next time!\n").exit(0)
