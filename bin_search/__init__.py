@@ -5,7 +5,7 @@ import check50.c
 @check50.check()
 def exists():
     """binary.c exists"""
-     check50.exists("binary.c")
+    check50.exists("binary.c")
 
       
 @check50.check(exists)
