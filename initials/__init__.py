@@ -25,7 +25,7 @@ def lowercase():
 @check50.check(compiles)
 def mixed_case():
     """Outputs HJ for hailey James"""
-    check50.run("./initials").stdin("hailey James").stdout("[Ii]nitials:\s*HJ\n"), "Initials: HJ\n").exit(0)
+    check50.run("./initials").stdin("hailey James").stdout("[Ii]nitials:\s*HJ\n", "Initials: HJ\n").exit(0)
 
 @check50.check(compiles)
 def all_uppercase():
