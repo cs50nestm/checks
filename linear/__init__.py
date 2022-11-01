@@ -22,16 +22,16 @@ def finds_22():
     
 @check50.check(compiles)
 def finds_7():
-    """linear search finds 22"""
+    """linear search finds 7"""
     check50.run("./linear").stdin("7").stdout("Found your number! Bingo!\n").exit(0)
     
 @check50.check(compiles)
 def finds_64():
-    """linear search finds 22"""
+    """linear search finds 64"""
     check50.run("./linear").stdin("64").stdout("Found your number! Bingo!\n").exit(0)
     
     
 @check50.check(compiles)
 def does_not_find_50():
     """linear search does not find 50"""
-    check50.run("./linear").stdin("64").stdout("Sorry better luck next time!\n").exit(0)
+    check50.run("./linear").stdin("50").stdout("Sorry better luck next time!\n").exit(0)
