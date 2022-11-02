@@ -11,7 +11,7 @@ def exists(self):
 @check50.check(exists)
 def compiles(self):
     """bubble.c compiles."""
-     check50.c.compile("bubble.c", lcs50=True)
+    check50.c.compile("bubble.c", lcs50=True)
 
         
 @check50.check(compiles)
