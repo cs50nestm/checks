@@ -17,13 +17,13 @@ def compiles():
 @check50.check(compiles)
 def finds_2():
     """binary search finds 2"""
-    check50.run("./binary").stdin("2").stdout("Found\n").exit(0)
+    check50.run("./binary").stdin("2").stdout("Found!\n").exit(0)
 
     
 @check50.check(compiles)
 def finds_14():
     """binary search finds 10"""
-    check50.run("./binary").stdin("10").stdout("Found\n").exit(0)
+    check50.run("./binary").stdin("10").stdout("Found!\n").exit(0)
 
     
 @check50.check(compiles)
