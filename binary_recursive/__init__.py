@@ -21,12 +21,12 @@ def finds_2():
 
     
 @check50.check(compiles)
-def finds_14():
+def finds_10():
     """binary search finds 10"""
     check50.run("./binary").stdin("10").stdout("Found!\n").exit(0)
 
     
 @check50.check(compiles)
-def finds_9():
+def finds_33():
     """binary search does not fine 33"""
     check50.run("./binary").stdin("33").stdout("Not found!\n").exit(0)
