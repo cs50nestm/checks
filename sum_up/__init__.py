@@ -16,13 +16,13 @@ def compiles():
              
 @check50.check(compiles)
 def sums_to_5():
-    """sumup sums to 5"""
+    """sumup sums 1 to 5"""
     check50.run("./sumup").stdin("5").stdout("The sum from 1 to 5 is 15").exit(0)
 
     
 @check50.check(compiles)
 def sums_to_10():
-    """sumup sums to 10"""
+    """sumup sums 1 to 10"""
     check50.run("./sumup").stdin("10").stdout("The sum from 1 to 10 is 55").exit(0)
 
   
